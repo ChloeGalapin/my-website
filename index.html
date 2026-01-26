@@ -1,65 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CHLO - Personal Website">
-    <title>CHLO</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header section containing navigation and name -->
-    <header>
-        <!-- Navigation menu bar -->
-        <nav class="top-nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Main heading with your name in yellow -->
-        <h1 class="site-title">CHLO</h1>
-    </header>
+<!-- First section - Portfolio/Project -->
+<article class="grid-item">
+    <a href="portfolio.html" class="item-link">
+        <div class="image-container">
+            <img src="images/cappybarahallo.jpg" alt="Portfolio">
+        </div>
+        <h2 class="item-title">ART</h2>
+    </a>
+</article>
 
-    <!-- Main content area -->
-    <main>
-        <!-- Container for the three equal image sections -->
-        <section class="image-grid">
-            
-            <!-- First section - Portfolio/Project -->
-            <article class="grid-item">
-                <a href="portfolio.html" class="item-link">
-                    <div class="image-container">
-                        <img src="cappybarahallo.jpg" alt="Portfolio">
-                    </div>
-                    <h2 class="item-title">ART</h2>
-                </a>
-            </article>
+<!-- Second section - Blog/Substack -->
+<article class="grid-item">
+    <a href="https://substack.com/@yourname" target="_blank" rel="noopener noreferrer" class="item-link">
+        <div class="image-container">
+            <img src="images/chloeinfrontofcolosseum.jpg" alt="Blog">
+        </div>
+        <h2 class="item-title">LOVE</h2>
+    </a>
+</article>
 
-            <!-- Second section - Blog/Substack -->
-            <article class="grid-item">
-                <a href="https://substack.com/@yourname" target="_blank" rel="noopener noreferrer" class="item-link">
-                    <div class="image-container">
-                        <img src="chloeinfrontofcolosseum.jpg" alt="Blog">
-                    </div>
-                    <h2 class="item-title">LOVE</h2>
-                </a>
-            </article>
+<!-- Third section - Gallery -->
+<article class="grid-item">
+    <a href="gallery.html" class="item-link">
+        <div class="image-container">
+            <img src="images/outfitcheck.jpg" alt="Gallery">
+        </div>
+        <h2 class="item-title">Fashion</h2>
+    </a>
+</article>
+```
 
-            <!-- Third section - Gallery -->
-            <article class="grid-item">
-                <a href="gallery.html" class="item-link">
-                    <div class="image-container">
-                        <img src="outfitcheck.jpg" alt="Gallery">
-                    </div>
-                    <h2 class="item-title">Fashion</h2>
-                </a>
-            </article>
+## The Three Changes:
 
-        </section>
-    </main>
+1. **Line with capybara image:** Change `src="cappybarahallo.jpg"` to `src="images/cappybarahallo.jpg"`
+2. **Line with colosseum image:** Change `src="chloeinfrontofcolosseum.jpg"` to `src="images/chloeinfrontofcolosseum.jpg"`
+3. **Line with outfit image:** Change `src="outfitcheck.jpg"` to `src="images/outfitcheck.jpg"`
 
-</body>
-</html>
