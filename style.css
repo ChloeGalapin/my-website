@@ -98,6 +98,7 @@ main {
 /* Individual grid items */
 .grid-item {
     position: relative;
+    width: 100%;
 }
 
 .item-link {
@@ -106,16 +107,19 @@ main {
     color: #000000;
 }
 
-/* Image container */
+/* Image container with fixed aspect ratio */
 .image-container {
     width: 100%;
+    height: 500px; /* Fixed height to make all images same size */
     overflow: hidden;
     background-color: #F5F5F5;
+    position: relative;
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* This ensures images fill the space while maintaining aspect ratio */
     display: block;
     transition: transform 0.3s ease;
 }
@@ -136,7 +140,7 @@ main {
 }
 
 /* Responsive design for tablets */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -144,10 +148,14 @@ main {
     .site-title {
         font-size: 56px;
     }
+    
+    .image-container {
+        height: 400px;
+    }
 }
 
 /* Responsive design for mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
         padding: 15px 20px;
     }
@@ -169,5 +177,9 @@ main {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    .image-container {
+        height: 350px;
     }
 }
