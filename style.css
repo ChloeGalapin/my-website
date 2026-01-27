@@ -14,7 +14,7 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     line-height: 1.6;
-    font-weight: 400; /* Regular weight for body text */
+    font-weight: 400;
 }
 
 /* Heading hierarchy with decreasing font weights */
@@ -47,7 +47,7 @@ header {
     padding: 20px 40px;
 }
 
-/* Top navigation bar */
+/* Top navigation bar - right aligned */
 .top-nav {
     margin-bottom: 30px;
 }
@@ -72,7 +72,7 @@ header {
     color: #ECBD35;
 }
 
-/* Site title - Chloe Galapin in yellow - centered */
+/* Site title section - centered */
 .title-section {
     text-align: center;
     margin: 20px 0;
@@ -80,7 +80,7 @@ header {
 
 .site-title {
     font-size: 72px;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
     color: #ECBD35;
     letter-spacing: 2px;
     margin: 0;
@@ -99,10 +99,10 @@ header {
 
 /* Main content area */
 main {
-    padding: 20px 40px 40px 40px; /* Reduced top padding from 40px to 20px */
+    padding: 20px 40px 40px 40px;
 }
 
-/* Three-column image grid */
+/* Three-column image grid - side by side */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -123,10 +123,10 @@ main {
     color: #000000;
 }
 
-/* Image container with fixed aspect ratio */
+/* Image container with fixed height for uniform sizing */
 .image-container {
     width: 100%;
-    height: 500px; /* Fixed height to make all images same size */
+    height: 500px;
     overflow: hidden;
     background-color: #F5F5F5;
     position: relative;
@@ -135,20 +135,20 @@ main {
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This ensures images fill the space while maintaining aspect ratio */
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
 }
 
-/* Hover effect on images */
+/* Hover effect - zoom in slightly */
 .item-link:hover .image-container img {
     transform: scale(1.05);
 }
 
-/* Item titles below images */
+/* Item titles below images - centered */
 .item-title {
     font-size: 14px;
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 15px;
