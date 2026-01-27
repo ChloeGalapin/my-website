@@ -72,18 +72,34 @@ header {
     color: #ECBD35;
 }
 
-/* Site title - CHLO in yellow */
+/* Site title - Chloe Galapin in yellow - centered */
+.title-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .site-title {
     font-size: 72px;
     font-weight: 700; /* Bold */
     color: #ECBD35;
     letter-spacing: 2px;
-    margin: 40px 0;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 /* Main content area */
 main {
-    padding: 40px;
+    padding: 20px 40px 40px 40px; /* Reduced top padding from 40px to 20px */
 }
 
 /* Three-column image grid */
@@ -161,7 +177,7 @@ main {
     }
     
     main {
-        padding: 20px;
+        padding: 15px 20px 20px 20px;
     }
     
     .top-nav ul {
@@ -171,7 +187,14 @@ main {
     
     .site-title {
         font-size: 48px;
-        margin: 20px 0;
+    }
+    
+    .title-section {
+        margin: 15px 0;
+    }
+    
+    .subtitle {
+        font-size: 14px;
     }
     
     .image-grid {
