@@ -41,12 +41,12 @@
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease-in-out;
+    padding: 10px 0;
 }
 
 .carousel-slide {
-    min-width: calc(33.333% - 14px); /* Show 3 slides at once */
-    display: flex;
-    justify-content: center;
+    min-width: calc((100% - 40px) / 3); /* Show 3 slides: total width minus 2 gaps, divided by 3 */
+    flex-shrink: 0;
 }
 
 /* Outfit placeholder - smaller pink rectangles */
